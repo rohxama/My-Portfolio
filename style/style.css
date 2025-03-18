@@ -74,6 +74,7 @@ body{
 .box-grid{
     display: flex;
     gap: 30px;
+    
 }
 
 .upper-box-grid{
