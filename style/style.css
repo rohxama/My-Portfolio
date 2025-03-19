@@ -127,3 +127,29 @@ body{
     font-weight: 900;
     color: #A6ADBB;
 }
+
+.work-box{
+    padding: 1rem 0;
+    display: flex;
+    align-items: first baseline;
+}
+
+.work-box:hover a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+
+.work-box i{
+    font-weight: 100;
+    font-size: 2.5rem;
+    color: rgba(212, 212, 216, 1);
+}
+
+.work-box a {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(212, 212, 216, 1);
+}
