@@ -129,20 +129,34 @@ body{
 }
 
 .work-box{
-    padding: 1rem 0;
+    padding: 0.9rem 0;
     display: flex;
     align-items: first baseline;
+    transition: all ease 0.3s;
 }
 
 .work-box:hover a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-
+    color: #EC4899;
+    font-style: italic;
+    transition: all ease 0.3s;
 }
 
 .work-box i{
     font-weight: 100;
     font-size: 2.5rem;
     color: rgba(212, 212, 216, 1);
+    transition: all ease 0.3s;
+}
+
+.work-box:hover i{
+    color: #EC4899;
+    transition: all ease 0.3s;
+}
+
+.work-box:hover{
+    background-color: #DBEAFE;
+    border-radius: 20px;
+    transition: all ease 0.3s;
 }
 
 .work-box a {
@@ -152,4 +166,5 @@ body{
     text-transform: capitalize;
     font-family: 'Times New Roman', Times, serif;
     color: rgba(212, 212, 216, 1);
+    transition: all ease 0.3s;
 }
