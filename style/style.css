@@ -1,15 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-body{
+a {
+    text-decoration: none;
+}
+
+body {
     background-color: #f5f5f4;
     /* cursor: none; */
     overflow: hidden;
@@ -55,7 +60,7 @@ body{
     }
 }
 
-.container{
+.container {
     max-width: 60%;
     width: 100%;
     height: 100vh;
@@ -63,7 +68,7 @@ body{
     /* background-color: red; */
 }
 
-.box-wrapper{
+.box-wrapper {
     padding: 2rem 3rem;
     height: 100%;
     display: flex;
@@ -71,21 +76,21 @@ body{
     flex-direction: column;
 }
 
-.box-grid{
+.box-grid {
     display: flex;
     gap: 30px;
-    
+
 }
 
-.upper-box-grid{
+.upper-box-grid {
     align-items: flex-start;
 }
 
-.lower-box-grid{
+.lower-box-grid {
     align-items: flex-end;
 }
 
-.box{
+.box {
     background: #f5f5f4;
     height: 192px;
     width: 374px;
@@ -95,65 +100,61 @@ body{
     transition: all ease 0.3s;
 }
 
-.box-grid .box:hover{
+.box-grid .box:hover {
     transform: rotate(0deg);
     transition: all ease 0.3s;
 }
 
-.sm-box{
+.sm-box {
     width: 168px;
     height: 185px;
     transform: rotate(-4deg);
     transition: all ease 0.3s;
 }
 
-.box-grid .bx{
+.box-grid .bx {
     transform: rotate(2deg);
     transition: all ease 0.3s;
 }
 
 
-.mid-content{
+.mid-content {
     text-align: center;
 }
 
-.mid-content h1{
-    font-size: 7rem;
-    font-weight: 900;   
-    text-transform: uppercase;
-}
-.mid-content p{
+.mid-content p {
     font-size: 2.2rem;
-    font-weight: 900;
+    font-weight: 600;
     color: #A6ADBB;
 }
 
-.work-box{
+
+.work-box {
     padding: 0.9rem 0;
     display: flex;
     align-items: first baseline;
     transition: all ease 0.3s;
 }
 
-.work-box:hover a{
+.work-box:hover a {
     color: #EC4899;
     font-style: italic;
     transition: all ease 0.3s;
 }
 
-.work-box i{
+.work-box i {
     font-weight: 100;
     font-size: 2.5rem;
     color: rgba(212, 212, 216, 1);
     transition: all ease 0.3s;
 }
 
-.work-box:hover i{
+.work-box:hover i {
     color: #EC4899;
     transition: all ease 0.3s;
 }
 
-.work-box:hover{
+.work-box:hover {
     background-color: #DBEAFE;
     border-radius: 20px;
     transition: all ease 0.3s;
@@ -167,4 +168,73 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color: rgba(212, 212, 216, 1);
     transition: all ease 0.3s;
+}
+
+.social-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 16px;
+    border-radius: 20px;
+}
+
+.social-box:hover {
+    background-color: #ECFEFF;
+    transition: all ease 0.3s;
+}
+
+.social-icon i {
+    color: rgba(212, 212, 216, 1);
+    transition: all ease 0.3s;
+}
+
+.social-box:hover .instagram {
+    color: #E1306C;
+    transition: all ease 0.3s;
+}
+
+.social-box:hover .whatsapp {
+    color: #25D366;
+    transition: all ease 0.3s;
+}
+
+.social-box:hover .linkedin {
+    color: #0077B5;
+    transition: all ease 0.3s;
+}
+
+.social-box:hover .github {
+    color: #181717;
+    transition: all ease 0.3s;
+}
+
+.social-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    font-size: 2.5rem;
+}
+
+.mid-content h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+.admin {
+    background-clip: text;
+    text-align: center;
+    font-size: 100px;
+    color: transparent;
+    transition-property: all;
+    transition-duration: .7s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    background-image: linear-gradient(to right, #020617, #020617 33%, #ef4444 66%, #eab308, #22c55e, #3b82f6, #a855f7);
+    background-size: 300% 100%;
+}
+
+.admin:hover {
+    background-position: top left 100%;
 }
