@@ -16,7 +16,7 @@ a {
 
 body {
   background-color: #f5f5f4;
-  /* cursor: none; */
+  cursor: none;
   overflow: hidden;
   font-family: "Roboto Condensed", sans-serif;
   overflow-y: auto !important;
