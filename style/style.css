@@ -16,27 +16,14 @@ a {
 
 body {
   background-color: #f5f5f4;
-  cursor: none;
+  cursor: inherit;
   overflow: hidden;
   font-family: "Roboto Condensed", sans-serif;
   overflow-y: auto !important;
 }
 
 .cursor {
-  display: block;
-  width: 25px;
-  height: 25px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: transparent;
-  pointer-events: none;
-  z-index: 9999;
-  background-color: #a6adbbed;
-  border: 1px solid #A6ADBB;
-  transition: all 0.2s ease-out;
+  display: none;
 }
 
 
@@ -248,7 +235,7 @@ body {
 }
 
 .map-bg {
-  background-image: url('../media/Sahiwal-map.png');
+  background-image: url('../media/map.png');
   background-size: cover;
   background-position: center;
   filter: grayscale(0%);
@@ -596,8 +583,8 @@ body {
   transition: all 0.3s ease;
   gap: 20px;
   align-items: baseline;
-   background-color: #FBCFE8;
-    box-shadow: 0 4px 24px 0 rgba(236, 72, 153, 0.15);
+  background-color: #FBCFE8;
+  box-shadow: 0 4px 24px 0 rgba(236, 72, 153, 0.15);
 }
 
 .exp-date {
@@ -686,6 +673,28 @@ body {
 
 
 @media (min-width: 767px) {
+
+  body {
+    cursor: none;
+  }
+
+  .cursor {
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 9999;
+    background-color: #a6adbbed;
+    border: 1px solid #A6ADBB;
+    transition: all 0.2s ease-out;
+  }
+
 
   .custom-card-svg1,
   .custom-card-svg2 {
@@ -877,7 +886,7 @@ body {
     color: rgb(108, 105, 105);
   }
 
-  .exp-block{
+  .exp-block {
     box-shadow: none;
     background: none;
   }
@@ -1024,7 +1033,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .exp-block{
+  .exp-block {
     flex-direction: column;
   }
 }
