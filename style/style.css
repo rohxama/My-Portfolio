@@ -585,7 +585,6 @@ body {
   align-items: baseline;
   background-color: #FBCFE8;
   box-shadow: 0 4px 24px 0 rgba(236, 72, 153, 0.15);
-  border: none;
 }
 
 .exp-date {
@@ -914,7 +913,7 @@ body {
   }
 
   .exp-block:hover .tags span {
-    border: none;
+    border: white;
     color: #1d4ed8;
     transition: 0.4s;
   }
